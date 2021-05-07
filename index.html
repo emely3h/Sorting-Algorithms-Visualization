@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <title>Sorting Algorithms Visualizer</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js" type="module" ></script>
 </head>
 
 <body>
@@ -19,30 +20,26 @@
     <button id="continue">weiter</button>
    -->
     <div class="button-container">
-            <button onclick="javascript:location.reload(numberArray);">New Array</button>
+            <button id="new-array">New Array</button>
             <button id="sort">Bubble Sort</button>
             <button id="insertion-sort">Insertion Sort</button>
+            <button id="selection-sort">Selection Sort</button>
             <button id="merge-sort">Merge Sort</button>
             <button id="quick-sort">Quick Sort</button>
-            <button id="selection-sort">Selection Sort</button>
-
-
-
     </div>
     <div class="slide-outer-container">
         <div class="slide-inner-container" id="inner-container-1">
             <p>Array size</p>
-            <input type="range" min="10" max="500" value="250" class="slider" id="array-size">
+            <input type="range" min="10" max="500" value="10" class="slider" id="array-size">
         </div>
         <div class="slide-inner-container" id="inner-container-2">
             <p>Sorting speed: </p>
-            <input type="range" min="0" max="1000" value="50" class="slider" id="sorting-speed">
+            <input type="range" min="0" max="1000" value="100" class="slider" id="sorting-speed">
         </div>
     </div>
 
 
 
-    <script src="script.js"></script>
 </body>
 
 </html>
